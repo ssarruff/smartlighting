@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
   if (mysqli_query($conn, $sql)) {
     // Redirecting to login page
-    header("Location: loginpage.php");
+    header("Location: index.php");
     exit();
   } else {
     echo "Error: " . mysqli_error($conn);
@@ -61,10 +61,10 @@ mysqli_close($conn);
           <label for="confirm_password" id="confirm_password">Confirm Password:</label>
           <input type="password" id="password" name="password" required autocomplete="current-password">
 
-          <input type="hidden" id="user-redirect-url" name="user-redirect-url2" value="loginpage.php">
+          <input type="hidden" id="user-redirect-url" name="user-redirect-url2" value="index.php">
           <input type="submit" name="submit" value="Register">
         </form>
-        <p>Already have an account? <a href="loginpage.php" onclick="switchForms()">Login here.</a></p>
+        <p>Already have an account? <a href="index.php" onclick="switchForms()">Login here.</a></p>
       </div>   
 
       <script scr="js.js"></script>
