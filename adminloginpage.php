@@ -54,7 +54,7 @@ if (isset($_POST["submit"])) {
         <input type="password" id="password" name="password" required autocomplete="current-password">
         <input type="submit" name="submit" value="Login">
         </form>
-        <p>Are you a user? <a href="loginpage.php" onclick="switchToLogin()">Login here.</a></p>
+        <p>Are you a user? <a href="index.php" onclick="switchToLogin()">Login here.</a></p>
 	</div>
   <script scr="js.js"></script>
 </body>
