@@ -2,5 +2,5 @@
 session_start();
 unset($_SESSION["id"]);
 unset($_SESSION["username"]);
-header("Location:loginpage.php");          
+header("Location:index.php");          
 ?>
